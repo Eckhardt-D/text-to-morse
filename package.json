@@ -1,0 +1,16 @@
+{
+  "name": "morse",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vite": "^5.2.11"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
