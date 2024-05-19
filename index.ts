@@ -3,12 +3,12 @@ import puncutation from './morse_punc.json';
 
 let playing = false;
 
+const context = new AudioContext();
 
 function beep(length: number) {
   return new Promise((resolve) => {
-    const context = new AudioContext();
     const oscillator = context.createOscillator()
-    /*if you want to beep without using a wave file*/
+
     oscillator.type = "sine";
     oscillator.frequency.value = 1000;
     oscillator.connect(context.destination);
